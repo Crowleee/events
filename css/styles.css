@@ -55,7 +55,11 @@ p {
 }
 
 .section--gradient {
-    background-image: linear-gradient(to bottom, #333399, #fe00cc);
+    background-image: linear-gradient(to top, #ff00cc 0%, #333399 64%, #333399 100%);
+}
+
+.section--bg-pink {
+    background-color: #ffe9eb;
 }
 
 .section__title {
@@ -215,6 +219,10 @@ header {
     font-size: 0.6em; 
 }
 
+.text-medium {
+    font-size: 0.75em; 
+}
+
 /*Text alignment*/
 .text-center {
     text-align: center;
@@ -296,12 +304,26 @@ header {
     min-width: 100%;
 }
 
-.user__wrap {
+.user__wrap, .user__wrap-jury {
     width: 100%;
     padding-top: 100%;
     position: relative;
     overflow: hidden;
+}
+
+.user__wrap {
     border-radius: 15px;
+    
+}
+
+.user__round {
+    width: 31%;
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.user__wrap-jury {
+    border-radius: 170px;
 }
 
 .user__name {
@@ -350,3 +372,148 @@ header {
     text-transform: uppercase;
     line-height: 1;
 }
+
+/*Sponsors*/
+.sponsors {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sponsor {
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.sponsor__img {
+    transform: scale(0.8);
+    transition: all .25s ease-in;
+}
+
+.sponsor__img:hover,
+.sponsor__img:focus,
+.sponsor__img:active {
+    transform: scale(1);
+}
+
+/*footer*/
+footer {
+    background-color: #eeeeee;
+}
+
+.form-subscribe__input {
+    font-size: 2.2rem;
+    color: #888888;
+    border: 3px solid #fff;
+    padding: .7em;
+    border-radius: 10px;
+    transition: all .25s ease-in-out;
+    display: inline-block;
+    width: 400px;
+}
+
+.form-subscribe__input:focus {
+    outline: none;
+    border-color: #c60ebe;
+}
+
+.form-subscribe .btn {
+    padding: .7em;
+}
+
+.socials {
+    padding: 0;
+    margin: 50px;
+}
+
+.social {
+   display: inline-block; 
+   margin: 5px;
+}
+
+.social__link {
+    width: 62px;
+    height: 62px; 
+    background-color: #dedede;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    border-radius: 50%;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+    color: #dedede;
+    background-color: #fff;
+}
+
+/*Contact Form*/
+.form-contact {
+   width: 650px;
+   margin: 0 auto;
+   /* outline: 1px solid red; */
+} 
+
+.form-contact__input {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-bottom: 5px solid #000;
+    transition: all .25s ease-in;
+    padding: 15px 0;
+}
+
+.form-contact__input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.form-contact__label {
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+    padding: 15px 0;
+    transition: all .25s ease-in;
+}
+
+.form-contact__input:focus + .form-contact__label {
+    transform: translate(0, 0);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* outline: 1px solid blue; */
+}
+
+.col {
+    width: calc(50% - 15px);
+    /* outline: 1px solid green; */
+    position: relative;
+}   
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2 {
+    width: calc(50% - 15px);
+    position: relative;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col3 {
+    width: 100%;
+    position: relative;
+}
+
+
+
